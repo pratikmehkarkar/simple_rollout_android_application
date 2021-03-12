@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/one"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:fillViewport="false"
+        android:padding="10dp">
+        <WebView
+            android:id="@+id/textContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"/>
+    </ScrollView>
+    <custom_font.MyTextView_Lato_Light
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Baseline Softwares"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#E8E8E8"/>
+</RelativeLayout>

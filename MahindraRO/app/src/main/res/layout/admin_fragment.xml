@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorn"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:id="@+id/rel"
+        android:padding="10dp"
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <custom_font.MyTextView_Lato_Bold
+            android:id="@+id/txtvid"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Meeting"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/sub"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txtvid"
+            android:src="@drawable/calender"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:background="#fff"
+            android:layout_marginTop="30dp">
+
+
+            <custom_font.MyEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aeb0a5"
+                android:id="@+id/mloc"
+                android:layout_marginTop="20dp"
+                android:hint="Meeting Location"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:background="#00000000"
+                android:textSize="12dp"
+                android:letterSpacing="0.1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="5dp"
+                />
+            <custom_font.MyEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aeb0a5"
+                android:id="@+id/process"
+                android:layout_marginTop="20dp"
+                android:hint="Process"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:background="#00000000"
+                android:textSize="12dp"
+                android:letterSpacing="0.1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mstart"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/cal"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content">
+                    <custom_font.MyEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#aeb0a5"
+                        android:id="@+id/txstart"
+                        android:hint="11/12/2018"
+                        android:layout_centerInParent="true"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:background="#00000000"
+                        android:textSize="12dp"
+                        android:letterSpacing="0.1"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mend"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/cal"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content">
+                    <custom_font.MyEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#aeb0a5"
+                        android:id="@+id/txend"
+                        android:hint="11/12/2018"
+                        android:layout_centerInParent="true"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:background="#00000000"
+                        android:textSize="12dp"
+                        android:letterSpacing="0.1"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/people"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:id="@+id/spinner"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="right"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/people"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:id="@+id/spinner1"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c1c1c1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/trone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/trtwo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/trid"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

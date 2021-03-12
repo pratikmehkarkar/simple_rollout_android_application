@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorn"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/addmeeting"
+            android:layout_height="150dp"
+            android:src="@drawable/meetingadd"
+            android:layout_width="150dp"
+            />
+
+        <ImageView
+            android:id="@+id/manage"
+            android:layout_toRightOf="@+id/addmeeting"
+            android:layout_height="150dp"
+            android:src="@drawable/managemeet"
+            android:layout_width="150dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reg"
+            android:layout_height="150dp"
+            android:src="@drawable/createemp"
+            android:layout_width="150dp"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

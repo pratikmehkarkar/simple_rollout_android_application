@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/psh" />
+
+        <custom_font.MyTextView_Lato_Bold
+            android:id="@+id/txtvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Hyderabad"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:id="@+id/rel"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_weight=".2"
+            android:orientation="vertical">
+
+            <custom_font.MyTextView_Lato_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/start"
+                android:textColor="@color/colorGray"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <custom_font.MyTextView_Lato_Light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="11/11/2018"
+                android:id="@+id/txtvstart"
+                android:layout_below="@+id/start"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorGray"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/cal" />
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:orientation="vertical">
+
+                <custom_font.MyTextView_Lato_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="END"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/end"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <custom_font.MyTextView_Lato_Light
+                    android:id="@+id/txtvend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="11/11/2018"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/end"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <custom_font.MyTextView_Lato_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Trainers"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:id="@+id/img"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/people" />
+
+                    <custom_font.MyTextView_Lato_Light
+                        android:id="@+id/txtvtone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="Trainers"
+                        android:layout_toRightOf="@+id/img"
+                        android:padding="5dp"
+                        android:textColor="@color/colorGray"
+                        android:textSize="20dp"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:id="@+id/img1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/people" />
+
+                    <custom_font.MyTextView_Lato_Light
+                        android:id="@+id/txtvttwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="Trainers"
+                        android:layout_toRightOf="@+id/img1"
+                        android:padding="5dp"
+                        android:textColor="@color/colorGray"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"/>
+
+            <custom_font.MyTextView_Lato_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/txtvprocess"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roun_rect_lightgray"
+                android:gravity="center"
+                android:text="Process: training"
+                android:textColor="@color/colorGray"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <custom_font.MyTextView_Lato_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/txtvstatus"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roun_rect_lightgray"
+                android:gravity="center"
+                android:text="Process: training"
+                android:textColor="@color/colorGray"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+</RelativeLayout>
